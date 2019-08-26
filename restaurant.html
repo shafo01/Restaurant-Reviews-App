@@ -17,11 +17,11 @@
     <header>
         <!-- Beginning nav -->
         <nav>
-            <h1><a tabindex="0" href="/">Restaurant Reviews</a></h1>
+            <h1><a href="/">Restaurant Reviews</a></h1>
         </nav>
         <!-- Beginning breadcrumb -->
-        <ul id="breadcrumb" class="breadcrumb">
-            <li><a tabindex="0" href="/">Home</a></li>
+        <ul aria-label="breadcrumb" role="navigation" id="breadcrumb" class="breadcrumb">
+            <li><a href="/">Home</a></li>
         </ul>
         <!-- End breadcrumb -->
         <!-- End nav -->
@@ -32,12 +32,12 @@
     <main role="main" class="maincontent" id="maincontent">
         <!-- Beginning map -->
         <section id="map-container" class="map-container">
-            <div tabindex="0" id="map" class="map" aria-label="map"></div>
+            <div role="application" id="map" class="map" aria-label="map"></div>
         </section>
         <!-- End map -->
         <!-- Beginning restaurant -->
         <section id="restaurant-container" class="restaurant-container">
-            <h2 id="restaurant-name" class="restaurant-name"></h2>
+            <h2 tabindex="0" id="restaurant-name" class="restaurant-name"></h2>
             <!--For styling purpose only. It has no semantic meaning -->
             <div>
                 <picture>
@@ -47,8 +47,8 @@
                 <p id="restaurant-cuisine" class="restaurant-cuisine"></p>
             </div>
             <div>
-                <p aria-label="restaurant address" id="restaurant-address" class="restaurant-address"></p>
-                <table aria-label="restaurant hours" id="restaurant-hours" class="restaurant-hours"></table>
+                <p tabindex="0" id="restaurant-address" class="restaurant-address"></p>
+                <table tabindex="0" aria-label="restaurant hours" id="restaurant-hours" class="restaurant-hours"></table>
             </div>
         </section>
         <!-- end restaurant -->
@@ -61,7 +61,7 @@
     <!-- End main -->
     <!-- Beginning footer -->
     <footer id="footer" class="footer">
-        Copyright (c) 2017 <a tabindex="0" href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+        Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
     </footer>
     <!-- End footer -->
     <script type="application/javascript" charset="utf-8" src="js/controller.js"></script>
