@@ -164,7 +164,8 @@ header nav a {
 
 /** Restaurant lists section **/
 .restaurants-list img {
-    width: 80vw;
+    /*width: 80vw;*/
+    max-width: 16rem;
     border-top-left-radius: 3em;
     border-bottom-right-radius: 3em;
 }
@@ -174,9 +175,11 @@ header nav a {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    max-width: 20rem;
 }
 
 .restaurants-list li h2 {
+    max-width: 16rem;
     color: #f18200;
     font-size: 1.5rem;
     font-weight: 200;
@@ -348,13 +351,13 @@ header nav a {
     }
 
     .restaurants-list img {
-        width: 40vw;
+       /* width: 40vw;*/
     }
 
     /** prevent them from taking up too much width based on their contents */
     .restaurants-list li h2,
     .restaurants-list li a {
-        max-width: 30vw;
+        /*max-width: 30vw;*/
     }
 
     /* ====================== Restaurant Filtering ====================== */
@@ -393,7 +396,7 @@ header nav a {
 
     /** Restaurant lists section **/
     .restaurants-list img {
-        width: 40vw;
+        /*width: 40vw;*/
     }
 
     .restaurants-list {
@@ -406,7 +409,7 @@ header nav a {
     .restaurants-list li a,
     .restaurants-list li h2,
         {
-        max-width: 30vw;
+       /* max-width: 30vw;*/
     }
 
     /* Footer Section */
