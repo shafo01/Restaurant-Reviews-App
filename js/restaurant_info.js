@@ -89,6 +89,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
     const image = document.getElementById('restaurant-img');
     image.className = 'restaurant-img'
     image.src = DBHelper.imageUrlForRestaurant(restaurant);
+    image.alt = "Picture of "+restaurant.name;
 
     /** Add srcset value for high resolution image **/
     const highResImg = document.getElementById('restaurant-img-src-large');
@@ -116,12 +117,14 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 
         const day = document.createElement('td');
         day.innerHTML = key;
+        day.tabIndex = 0;
         row.appendChild(day);
 
         const time = document.createElement('td');
         time.innerHTML = operatingHours[key];
+        time.tabIndex = 0;
         row.appendChild(time);
-
+        
         hours.appendChild(row);
     }
 }
@@ -153,20 +156,25 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  */
 createReviewHTML = (review) => {
     const li = document.createElement('li');
+    li.tabIndex = 0;
     const name = document.createElement('p');
     name.innerHTML = review.name;
+    name.tabIndex = 0;
     li.appendChild(name);
 
     const date = document.createElement('p');
     date.innerHTML = review.date;
+    date.tabIndex = 0;
     li.appendChild(date);
 
     const rating = document.createElement('p');
     rating.innerHTML = `Rating: ${review.rating}`;
+    rating.tabIndex = 0;
     li.appendChild(rating);
 
     const comments = document.createElement('p');
     comments.innerHTML = review.comments;
+    comments.tabIndex = 0;
     li.appendChild(comments);
 
     return li;
@@ -179,6 +187,7 @@ fillBreadcrumb = (restaurant = self.restaurant) => {
     const breadcrumb = document.getElementById('breadcrumb');
     const li = document.createElement('li');
     li.innerHTML = restaurant.name;
+    li.tabIndex = 0;
     breadcrumb.appendChild(li);
 }
 
