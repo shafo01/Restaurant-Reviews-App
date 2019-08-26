@@ -1,6 +1,6 @@
 //I followed along the course from Udacity and the tutorial from https://www.youtube.com/watch?v=ksXwaWHCW6k&list=WL&index=2&t=742s
 
-var cacheName = 'v1';
+const cacheName = 'v1';
 let urlsToCache = [
     '/',
     'index.html',
